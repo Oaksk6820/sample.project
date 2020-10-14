@@ -2,7 +2,7 @@
   <div>
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-spacer />
-      <H2> PokeDex Header </H2>
+      <H2> PokeDex </H2>
       <v-spacer />
     </v-app-bar>
 
@@ -12,8 +12,10 @@
       </v-container>
     </v-main>
 
-    <v-footer :absolute="!fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+    <v-footer padless>
+      <v-col class="text-center" cols="12">
+        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+      </v-col>
     </v-footer>
   </div>
 </template>
