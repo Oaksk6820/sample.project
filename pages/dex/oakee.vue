@@ -3,7 +3,7 @@
     <v-toolbar flat>
       <v-spacer></v-spacer>
       <v-text-field
-        v-model="search"
+        v-model="Search"
         label="Search"
         single-line
         hide-details
